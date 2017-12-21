@@ -1,32 +1,359 @@
-# Prerequisites
-*.d
+#include "stdafx.h"
+#include <iostream>
+#include <cctype>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+using namespace std;
+int main()
+{
+	cout << "The game is started\nEnter your value:\n\n1 : (a, 1)\n2 : (a, 2)\n3 : (a, 3)\n4 : (b, 1)\n5 : (b, 2)\n6 : (b, 3)\n7 : (c, 1)\n8 : (c, 2)\n9 : (c, 3)\nq : quit";
+	unsigned char matrix[5][5], i, j;
+	unsigned char n;
+	for (i = 0; i < 5; i++) {
+		for (j = 0; j < 5; j++) {
+			matrix[i][j] = 3;
+		}
+		cout << endl;
+	}
+	unsigned char chet = 0;
+	for (int i = 1; i > 0; i++)
+	{
+		if (chet % 2 + 1 == 1)
+		{
+			cout << "Player 1, enter your number: ";
+		}
+		else
+		{
+			cout << "Player 2, enter your number: ";
+		}
+		cin >> n;
+		if (isdigit(n))
+		{
+			switch (n)
+			{
+			case '1': {if (matrix[0][0] == 3) {
+				matrix[0][0] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '2': {if (matrix[0][1] == 3) {
+				matrix[0][1] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '3': {if (matrix[0][2] == 3) {
+				matrix[0][2] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '4': {if (matrix[0][3] == 3) {
+				matrix[0][3] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '5': {if (matrix[0][4] == 3) {
+				matrix[0][4] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '6': {if (matrix[1][0] == 3) {
+				matrix[1][0] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '7': {if (matrix[1][1] == 3) {
+				matrix[1][1] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '8': {if (matrix[1][2] == 3) {
+				matrix[1][2] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '9': {if (matrix[1][3] == 3) {
+				matrix[1][3] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '10': {if (matrix[1][4] == 3) {
+				matrix[1][4] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '11': {if (matrix[2][0] == 3) {
+				matrix[2][0] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '12': {if (matrix[2][1] == 3) {
+				matrix[2][1] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '13': {if (matrix[2][2] == 3) {
+				matrix[2][2] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '14': {if (matrix[2][3] == 3) {
+				matrix[2][3] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '15': {if (matrix[2][4] == 3) {
+				matrix[2][4] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '16': {if (matrix[3][0] == 3) {
+				matrix[3][0] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '17': {if (matrix[3][1] == 3) {
+				matrix[3][1] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '18': {if (matrix[3][2] == 3) {
+				matrix[3][2] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '19': {if (matrix[3][3] == 3) {
+				matrix[3][3] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '20': {if (matrix[3][4] == 3) {
+				matrix[3][4] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '21': {if (matrix[4][0] == 3) {
+				matrix[4][0] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '22': {if (matrix[4][1] == 3) {
+				matrix[4][1] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '23': {if (matrix[4][2] == 3) {
+				matrix[4][2] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '24': {if (matrix[4][3] == 3) {
+				matrix[4][3] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			case '25': {if (matrix[4][4] == 3) {
+				matrix[4][4] = chet % 2;
+				chet++;
+			}
+					  else
+					  {
+						  cout << "\nWrong!";
+					  }
+					  break; }
+			default: {cout << "Choose other number";
+				break; }
+			}
 
-# Precompiled Headers
-*.gch
-*.pch
+		}
+		else
+		{
+			if (n == 'q')
+			{
+				cout << "Quit";
+				return 0;
+			}
+			else
+			{
+				cout << "Choose other value";
+			}
+		}
+		//вывод матрицы
+		cout << endl;
+		cout << "    1   2   3   4   5\n  +---+---+---+---+---+\n";
+		for (i = 0; i < 5; i++)
+		{
+			switch (i)
+			{
+			case 0:
+			{
+				cout << "a |";
+				break;
+			}
+			case 1:
+			{
+				cout << "b |";
+				break;
+			}
+			case 2:
+			{
+				cout << "c |";
+				break;
+			}
+			case 3:
+			{
+				cout << "d |";
+			}
+			case 4:
+			{
+				cout << "e |";
+			}
+			}
+			for (j = 0; j < 5; j++)
+			{
+				if (matrix[i][j] == 3)
+				{
+					cout << "   |";
+				}
+				else {
+					if (matrix[i][j] == 0)
+					{
+						cout << " X |";
+					}
+					else
+					{
+						if (matrix[i][j] == 1)
+						{
+							cout << " O |";
+						}
+					}
+				}
+			}
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+			cout << endl << "  +---+---+---+---+---+\n";
+		}
+		cout << endl;
+		//Конец игры
+		/*for (i = 0; i < 5; i++)
+		{
+			if ((matrix[i][1] == matrix[i][2] == matrix[i][0] == matrix[i][3] == matrix[i][4] != 3) || (matrix[1][i] == matrix[2][i] == matrix[3][i] == matrix[4][i] == matrix[0][i] != 3) || (matrix[1][1] == matrix[2][2] == matrix[0][0] == matrix[3][3] == matrix[4][4] != 3) || (matrix[0][4] == matrix[1][3] == matrix[2][2] == matrix[3][1] == matrix[4][0] != 3))
+			{
+				if (chet % 2 == 1)
+				{
+					cout << "Player 1 wins\n";
+				}
+				else
+				{
+					cout << "Player 2 wins\n";
+				}
+				cin.get();
+				cin.get();
+				return 0;
+			}
+			else if (matrix[0][0] != 3 && matrix[0][1] != 3 && matrix[0][2] != 3 && matrix[0][3] != 3 && matrix[0][4] != 3 && matrix[1][0] != 3 && matrix[1][1] != 3 && matrix[1][2] != 3 && matrix[1][3] != 3 && matrix[1][4] != 3 && matrix[2][0] != 3 && matrix[2][1] != 3 && matrix[2][2] != 3 && matrix[2][3] != 3 && matrix[2][4] != 3 && matrix[3][0] != 3 && matrix[3][1] != 3 && matrix[3][2] != 3 && matrix[3][3] != 3 && matrix[3][4] != 3 && matrix[4][0] != 3 && matrix[4][1] != 3 && matrix[4][2] != 3 && matrix[4][3] != 3 && matrix[4][4] != 3)
+			{
+				cout << "The end. nobody wins";
+				cin.get();
+				cin.get();
+				return 0;
+			}
+		}*/
+	}
+	cin.get();
+	cin.get();
+	return 0;
+}
